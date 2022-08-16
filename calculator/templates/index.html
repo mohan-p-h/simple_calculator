@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="white" >
+    <h1>Simple Calculator:</h1>
+    <form action="calculator" method="POST">
+        {% csrf_token %}
+        <h1>Enter first number: <input type="text" name="num1"></h1><br><br>
+        <h1>Enter second number:<input type="text" name="num2"></h1><br><br>
+        <button type="submit" name="add">ADD</button>
+        <button type="submit" name="sub">SUB</button>
+        <button type="submit" name="mul">MUL</button>
+        <button type="submit" name="div">DIV</button>
+        <button type="submit" name="mod">MOD</button>
+    </form>
+</body>
+</html>
